@@ -1,0 +1,104 @@
+Network Scan Report
+Target IP Address: 199.59.243.228
+Scan Type: SYN Scan (-sS)
+Date of Scan: 2025-05-26
+Scan Duration: 27.04 seconds
+Scanner Version: Nmap 7.94SVN
+
+1. Introduction
+This report provides the results of a SYN scan (-sS) performed on the IP address 199.59.243.228. The purpose of the scan was to identify open ports and services running on the host in order to assess potential security risks and evaluate exposure to vulnerabilities.
+
+2. Scan Overview
+The Nmap SYN scan revealed a significant number of open ports across various services. The presence of both common and uncommon services on multiple ports suggests that the host is actively running a variety of applications, possibly including both modern and legacy systems. The following details summarize the findings.
+
+3. Summary of Findings
+Host Status: The host 199.59.243.228 is up with a latency of 0.052 seconds.
+
+Total Open Ports: 98 open ports were detected across multiple service types.
+
+Key Open Ports Identified:
+
+Common Services:
+
+Port 22 (SSH): Secure remote login
+
+Port 80 (HTTP): Web server
+
+Port 443 (HTTPS): Secure web server
+
+Port 21 (FTP): File transfer protocol
+
+Port 25 (SMTP): Mail transfer protocol
+
+Port 53 (DNS): Domain Name Service
+
+Legacy/Uncommon Services:
+
+Port 9 (Discard): Typically used for testing or discarding packets
+
+Port 13 (Daytime): Typically used for time synchronization
+
+Port 19 (Chargen): Used in early network testing (Character Generator)
+
+Port 135 (MSRPC): Microsoft RPC services (potential Windows-specific service)
+
+Port 139 (NetBIOS-SSN): NetBIOS service (potential Windows-related)
+
+Port 445 (Microsoft DS): Microsoft Directory Services (associated with Windows)
+
+Port 6000-6100: Various X11 services, typically for remote GUI access
+
+Encrypted Services:
+
+Port 993 (IMAPS): Secure email retrieval (IMAP over SSL)
+
+Port 995 (POP3S): Secure email retrieval (POP3 over SSL)
+
+Port 990 (FTPS): Secure file transfer (FTP over SSL/TLS)
+
+Miscellaneous Services:
+
+Port 500 (ISAKMP): Internet Security Association and Key Management Protocol (typically used for VPNs)
+
+Port 111 (RPCbind): Remote Procedure Call binding (used in UNIX-based systems)
+
+4. Detailed Service Analysis
+The scan revealed a mixture of standard and legacy services that could indicate both modern and outdated systems. Several ports, particularly those corresponding to older services, may expose the system to potential security risks, as these protocols are known to have vulnerabilities.
+
+Windows-Specific Ports:
+
+Port 135 (MSRPC), Port 139 (NetBIOS), and Port 445 (Microsoft DS) are typically used in Windows-based systems. These services could be used for remote management, file sharing, or domain management but may also be exploited by attackers to gain unauthorized access.
+
+Legacy Services:
+
+Ports like 9 (Discard), 13 (Daytime), 19 (Chargen), and 37 (Time) suggest that legacy or unused services might be running, which could increase the attack surface of the host.
+
+Encrypted Services:
+
+The presence of ports like 993 (IMAPS), 995 (POP3S), and 990 (FTPS) indicate secure communication channels for email and file transfers. These services use encryption (SSL/TLS), which enhances security, but if not properly configured, they may still be vulnerable to certain types of attacks.
+
+Web-Related Services:
+
+Port 80 (HTTP) and Port 443 (HTTPS) are open, indicating that the host is serving web content. These services need to be carefully configured to prevent vulnerabilities such as SQL injection, cross-site scripting (XSS), and misconfigured SSL/TLS certificates.
+
+5. Security Considerations
+The large number of open ports could expose the host to potential security vulnerabilities, especially if outdated or misconfigured services are running. The following security considerations are recommended:
+
+Patch Management: Ensure that all services, particularly legacy services, are up-to-date with the latest security patches.
+
+Service Minimization: Disable or block any unnecessary services, especially legacy or unneeded protocols, such as Chargen, Daytime, and others identified in the scan.
+
+Access Control: Restrict access to sensitive services like SSH, Telnet, and SMB, and enforce strong authentication mechanisms where applicable.
+
+Network Segmentation: Isolate critical services (such as DNS and SMTP) from non-critical systems and ensure that firewall rules are in place to minimize exposure.
+
+Regular Audits: Conduct regular network scans and vulnerability assessments to ensure the system remains secure and properly configured.
+
+Use of Firewalls and Intrusion Detection Systems (IDS): Implement firewalls and IDS/IPS systems to monitor and block unauthorized access attempts.
+
+6. Conclusion
+The host at IP address 199.59.243.228 has a wide range of open ports and services. While some of these services are critical for legitimate functions, many are legacy services or potentially unnecessary protocols that could pose security risks. Immediate action should be taken to close or secure any unused services and ensure that critical services are properly configured and patched.
+
+For a more detailed security assessment, a follow-up scan using vulnerability scanning tools is recommended.
+
+End of Report
