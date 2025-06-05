@@ -1,0 +1,57 @@
+Internship Task Report
+Task Title: Analyze the Security Risks of Using Browser Extensions
+Submitted by: [Your Name]
+Internship Role: Cybersecurity Intern
+Submitted to: [Supervisor’s Name]
+Date: [Insert Date]
+
+Objective of the Task
+The objective of this task was to analyze how browser extensions, while useful, can become a source of security threats and privacy risks. I was asked to use a practical scenario involving a typical user who installs 4–5 extensions and assess the possible risks associated with them.
+
+Scenario Description
+A user named John installs the following five browser extensions to enhance his browsing experience:
+
+Ad Blocker Plus – Blocks unwanted ads and trackers.
+
+Price Compare Tool – Helps compare product prices across different shopping websites.
+
+Grammar Checker – Provides grammar and spelling suggestions.
+
+Screenshot Capture Tool – Allows taking and editing browser screenshots.
+
+Dark Mode Switcher – Enables dark mode for websites.
+
+At first, all these tools appear helpful. However, upon deeper review, several security concerns become apparent.
+
+Security Risks Identified
+Over-Permission Requests
+Some of these extensions ask for permissions to “read and change all your data on the websites you visit.” This includes sensitive pages such as banking sites or email inboxes, putting private data at risk.
+Example: The Grammar Checker may read everything typed into a browser, including login credentials.
+
+User Tracking and Data Harvesting
+Extensions like the Price Compare Tool often track browsing history and behavior for marketing purposes. This information may be shared with third parties without clear consent.
+
+Malicious Code Through Updates
+An extension can receive automatic updates. If a developer account is compromised, attackers can push malicious code to all users.
+Example: The Screenshot Tool could be updated to log keystrokes or steal screenshots silently.
+
+Script Injection Vulnerabilities
+Extensions such as Ad Blockers or Theme Switchers modify webpage content by injecting scripts. If these scripts are insecure, they can be exploited by attackers for XSS (Cross-Site Scripting) attacks.
+
+Abandoned or Sold Extensions
+Extensions with no recent updates are sometimes sold or hijacked by third parties who then insert malware.
+Example: The Dark Mode Switcher, if not updated, could be taken over and used to inject ads or spyware.
+
+Conclusion and Recommendations
+This task demonstrated that browser extensions, while useful, can introduce significant risks to users if not managed carefully. Based on the scenario, the following recommendations are made:
+
+Only install extensions from verified developers with good reputations.
+
+Always review permissions before installing an extension.
+
+Regularly audit browser extensions and remove unused or suspicious ones.
+
+Avoid extensions that require full access to browsing data unless absolutely necessary.
+
+Use browser security settings to limit what extensions can do.
+
